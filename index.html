@@ -9,7 +9,7 @@
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Portfólio Dev Lucas</title>
+    <title>Portfólio DevLucas</title>
 </head>
 <body>
     <div class="container">
@@ -22,7 +22,7 @@
         </div>
 
         
-        <header>
+        <header id="home">
             <div class="img-wrapper">    
                 <img src="images/bg.jpg" alt="">
             </div>
@@ -37,10 +37,9 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Knowledge</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Project</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Services</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
 
@@ -141,7 +140,7 @@
             </div>
           </section>
 
-          <section class="sessao-orcamento">
+          <section class="sessao-orcamento" id="orcamento">
               <div class="orcamento-wrapper">
                   <h1>Faça um orçamento</h1>
                   <form>
@@ -162,10 +161,29 @@
                       </div>
                       <label for="prazo">Prazo de Entrega</label>
                       <input type="range" name="prazo" id="prazo">
-                      <button class="btn btn-orcamento" type="submit">Enviar</button>
+                      <label id="preco">R$ 0,00</label>
+                      <button class="btn btn-orcamento" onclick="atualizarPreco()" type="submit">Enviar</button>
                   </form>
               </div>
           </section>
+
+          <footer>
+            <div class="footer-content">
+              <p>
+                Copyright &copy; 2021, Lucas Alencar Miranda - Todos os diretos reservados
+              </p>
+              <div class="social-list">
+                <ul>
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+          </a>
     </div>
 </body>
 
